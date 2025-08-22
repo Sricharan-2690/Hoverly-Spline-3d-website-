@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import "../styles/hero.css"
 import logo from "./logo.png" // ✅ import image since it's in the same folder
 import heroVideo from "./website logo animatio.mp4"
+import Splinescene from "./Splinescene"
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0)
@@ -25,23 +26,17 @@ export default function Hero() {
         Building <span className="gradient-text">Web-apps </span> optimized for 
         <span className="gradient-text"> Conversion</span>, Credibility & Scale
       </h1>
+
         <p className="hero-subtext">
           From high-conversion landing pages to enterprise level web-apps,
           tailored for your specific needs.
         </p>
-        <div className="hero-cta">
-          <a 
-            href="https://wa.me/919440386496" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn btn-gradient"
-          >
-            Chat on WhatsApp →
-          </a>
-        </div>
+        
+        <Splinescene />
+       <div className="hero-cta"> <a href="https://wa.me/919440386496" target="_blank" rel="noopener noreferrer" className="btn btn-gradient" > Chat on WhatsApp → </a> </div>
       </div>
 
-      {/* Big hero visual */}
+      {/* Big hero visual
       <div className="hero-visual-wrap">
         <div
           className="hero-bigbox"
@@ -60,7 +55,7 @@ export default function Hero() {
         />
 
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
