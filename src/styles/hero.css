@@ -83,3 +83,32 @@
   .hero-visual-wrap { margin-top: 28px; }
   .hero-bigbox { max-width: 100%; }
 }
+
+/* ====== RESPONSIVE SPLINE / VIDEO HANDLING ====== */
+
+/* Default: hide both */
+.desktop-only { display: none; }
+.mobile-only { display: none; }
+
+/* Desktop (>= 768px): show spline */
+@media (min-width: 768px) {
+  .desktop-only { display: block; }
+  .mobile-only { display: none; }
+}
+
+/* Mobile (< 768px): show video + WhatsApp button */
+@media (max-width: 767.98px) {
+  .desktop-only { display: none; }
+  .mobile-only { display: block; }
+
+  .mobile-only .hero-cta {
+    margin-bottom: 16px; /* push video below button */
+  }
+
+  .hero-mockup {
+    width: 100%;
+    border-radius: 16px;
+    display: block;
+  }
+}
+
